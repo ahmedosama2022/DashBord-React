@@ -1,0 +1,115 @@
+:root{
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(96, 75%, 89%);
+    --WhitrColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+  
+    --biggesFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontsize: .813rem;
+    --smallestFontSize: .75rem;
+  }
+.Sideber{
+    background: var(--WhitrColor);
+    box-shadow: 1px 0px 4px var(--greyText);
+    width: 22%;
+    height: 100%;
+    gap: 3rem;
+    overflow: scroll;
+
+}  
+
+.logoDiv{
+   padding: 1.5rem 1.5rem 0;
+   cursor: pointer;
+
+}
+
+.logoDiv img{
+  
+    margin-right: .5rem;
+    background: var(--inputColor);
+    border-radius: 2px;
+    padding: .2rem;
+}
+
+.menuDiv .SettingDiv .divTitle{
+   font-size: var(--h2FontSize);
+   color: var(--blackColor);
+   padding: 0 1.5rem 1.5rem;
+}
+
+.menuDiv a{
+ color: var(--greyText);
+ 
+ margin-left: 20px;
+ 
+}
+.menuDiv h3{
+    background-color: #2f6602;
+    color: white;
+    padding: 7px;
+}
+.menuDiv span{
+    padding-left: 10px;
+}
+
+.menuDiv a:hover{
+    border-left: 4px solid var(--HoverColor);
+    background-color: white;
+}
+.SettingDiv{
+   
+    position: relative;
+    top: 20px;
+    
+}
+.sec2{
+    position: relative;
+    bottom: 30px;
+}
+.SettingDiv h3{
+    background-color: #2f6602;
+    color: white;
+    padding: 7px;
+}
+.SettingDiv span{
+    padding-left: 10px;
+}
+.SettingDiv a:hover{
+    border-left: 4px solid var(--HoverColor);
+    background-color: white;
+    color: var(--PrimaryColor);
+}
+.SettingDiv a:hover::before{
+    height: 100%;
+    transition: .1s ease;
+}
+.SettingDiv a{
+    margin-left: 20px;
+    color: var(--greyText);
+   
+    font-size: 15px;
+}
+
+.sec13{
+    text-align: center;
+    background: var(--HoverColor);
+    padding: 20px 10px;
+    border-radius: 15px;
+    margin: 0 10px;
+    position: relative;
+    bottom: 30px;
+}
+.sec13 p{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    
+}

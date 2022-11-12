@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  transition: .3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --PrimaryColor: hsl(94, 59%, 35%);
+  --HoverColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --WhitrColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+
+  --biggesFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontsize: .813rem;
+  --smallestFontSize: .75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+html{
+  font-size: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+  text-decoration: none;
+
+}
+
+li{
+  list-style: none;
+}
+
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.container{
+  position: relative;
+  width: 95vw;
+  height: 95vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: var(--bgColor);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px var(--greyText);
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.icon{
+  font-size: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex{
+  display: flex;
+  align-items: center;
+
+}
+
+.grid{
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn{
+  box-shadow:  0 2px 4px var(--inputColor);
+  border-radius:  8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: .8rem 1rem;
+  color: var(--textColor);
+}
+.btn a{
+  color:  var(--WhitrColor);
+  font-weight: 500;
+}
+.btn .icon{
+  margin-left: .5rem;
+}
+
+.btn:hover{
+  background: var(--paleGreen);
+  color: var(--PrimaryColor);
+
+}
+
+img, video{
+  width: 100%;
+  height: auto;
+}
+
+
+input{
+  font-size: 100%;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bodyColor);
+  margin: auto;
+  padding: 1rem;
 }
